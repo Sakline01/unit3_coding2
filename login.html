@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height: 500px;
+            width: 100%;
+        }
+        .login{
+            height: 70%;
+            width: 20%;
+            margin: auto;
+            padding: 10px;
+            border: blueviolet solid 1px;
+        }
+        .login>h2{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .login>input{
+            height: 30px;
+            width: 90%;
+            margin: 10px;
+        }
+        .login>button{
+            height: 40px;
+            width: 90px;
+            margin-top: 20px;
+            margin-left:150px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <h2>Login</h2>
+            <input type="email" name="" id="logemail" placeholder="Email"><br>
+            <input type="password" name="" id="logpass" placeholder="password"><br>
+            <button onclick="loginprocess()">Login</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
