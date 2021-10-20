@@ -17,7 +17,7 @@ function DOM(data) {
     let img=document.createElement("img");
     img.src=data.avatar_url;
     let p=document.createElement("p");
-    p.textContent=data.id;
+    p.textContent=`id: ${data.id}`;
     div.className="card";
     div.append(img,p);
 result.append(div);
