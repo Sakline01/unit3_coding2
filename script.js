@@ -35,7 +35,8 @@ fetch("https://reqres.in/api/register", requestOptions)
     fetch("https://reqres.in/api/login", requestOptions)
       .then(response => response.text())
       .then(result => {
-          if (result) {
+          if (!("error" in JSON.parse(result))) {
+            console.log(result);
               location.replace("./home.html");
           }
       })
